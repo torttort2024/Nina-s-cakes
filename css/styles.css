@@ -84,6 +84,24 @@ footer {
     color: white;
 }
 
+
+
+
+
+.highlight {
+    border: 2px solid red;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.producti > div {
+    transition: 0.3s;
+}
+
+
+
+
+
 .zakaz {
     margin-top: 100px;
     min-height: 95vh;
