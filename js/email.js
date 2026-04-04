@@ -14,12 +14,12 @@ function send() {
         zakaz: document.getElementById("zakaz").value
     };
 
-   emailjs.send("service_ml72cpr", "template_6avwvsk", date)
+  emailjs.send("service_ml72cpr", "template_6avwvsk", data)
         .then(function (raspuns) {
-            alert("Заказ отправлен")
-            document.getElementById("forma").reset();
+            alert("Заказ отправлен");
+            form.reset(); // Очистка формы ПОСЛЕ успешной отправки
         }, function (error) {
-            alert("Ошибка")
-        })
+            alert("Ошибка при отправке: " + JSON.stringify(error));
+        });
 
 }
