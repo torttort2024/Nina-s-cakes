@@ -1,20 +1,20 @@
 emailjs.init("Qnu3GvhQohGYBldEK");
 
 function send() {
-
+    var form = document.getElementById("forma");
     if (document.getElementById("forma").checkValidity() == false) {
         document.getElementById("forma").reportValidity();
         return;
     }
 
-    var date = {
+    var data = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         address: document.getElementById("address").value,
         zakaz: document.getElementById("zakaz").value
     };
 
-  emailjs.send("service_ml72cpr", "template_6avwvsk", data)
+    emailjs.send("service_ml72cpr", "template_6avwvsk", data)
         .then(function (raspuns) {
             alert("Заказ отправлен");
             form.reset(); // Очистка формы ПОСЛЕ успешной отправки
