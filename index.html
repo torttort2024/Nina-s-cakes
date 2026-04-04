@@ -12,7 +12,11 @@
 </head>
 
 <body>
-
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </symbol>
+</svg>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Nina's cakes</a>
@@ -23,8 +27,11 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
           <li class="nav-item"><a class="nav-link" href="#products">Десерты|выпечка</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+          
           <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+          
           <li class="nav-item"><a class="nav-link" href="pages/order.html">Заказать</a></li>
         </ul>
         
@@ -507,23 +514,27 @@
   </div>
 
   <!-- Footer -->
-    <div class="container-fluid bg-primary">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+    <div class="container-fluid bg-primary mt-5">
+      <footer class="container d-flex flex-wrap justify-content-between align-items-center py-4 text-white">
         <div class="col-md-3 d-flex align-items-center">
-          <a class="navbar-brand" href="#"> <h5> Nina's cakes </a></h5> 
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-         <h6> Данный веб-сайт был выполнен в рамках <br />Региональной олимпиады: IT-технологии.</h6></br ></br >
-          &nbsp;
-          <span>&copy; 
-           <span id="year"></span>
-          </span>
+            <h5 class="mb-0">Nina's cakes</h5>
         </div>
 
-        <ul class="nav col-md-3 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a href="https://www.facebook.com/profile.php?id=100064158877873"><svg class="bi" width="24" height="24">
-            <use xlink:href="#facebook" /> </svg></a>
-          </li>
+        <div class="col-md-6 text-center">
+            <p class="mb-0 small">
+                Данный веб-сайт был выполнен в рамках <br />Региональной олимпиады: IT-технологии.<br>
+                © <span id="year"></span>
+            </p>
+        </div>
+
+        <ul class="nav col-md-3 justify-content-end list-unstyled d-flex mb-0">
+            <li class="ms-3">
+                <a class="text-white" href="https://www.facebook.com/profile.php?id=100064158877873">
+                    <svg width="24" height="24" fill="currentColor">
+                        <use xlink:href="#facebook" />
+                    </svg>
+                </a>
+            </li>
         </ul>
       </footer>
     </div>
