@@ -10,7 +10,6 @@
     <link href="../css/styles.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
 </head>
 
 <body>
@@ -61,38 +60,34 @@
         </div>
     </nav>
 
-    <div class="zakaz" data-aos="fade-up"> 
+  <div class="zakaz" data-aos="fade-up"> 
         <h2 class="centered">ВАШ ЗАКАЗ</h2> <br/>
-        <div class="row">
-            <div class="mb-3 col-md-6 col-sm-12">
+        <div class="row g-4"> 
+            <div class="mb-3 col-md-6 col-sm-12 shadow-lg p-4 bg-white rounded"> 
                 <form id="forma" autocomplete="off">
                     <label for="inputName" class="form-label">Ваше имя</label>
                     <input type="text" class="form-control" id="name" required>
                     <label for="inputEmail4" class="form-label">Ваш email</label>
-                    <input type="email" class="form-control" id="email"required>
+                    <input type="email" class="form-control" id="email" required>
                     <label for="inputAdres" class="form-label">Адрес</label>
                     <input type="text" class="form-control" id="address" required>
-                    <label for="zakaz" class="form-label" >Ваш заказ</label>
-                    <textarea class="form-control"rows="3" id="zakaz" required></textarea>
+                    <label for="zakaz" class="form-label">Ваш заказ</label>
+                    <textarea class="form-control" rows="3" id="zakaz" required></textarea>
                     <br/>
-                <div class="col-12 text-center">
-                    <input type="button" class="btn btn-success" onclick="send()" value="Отправить">
-                </div>
+                    <div class="col-12 text-center">
+                        <input type="button" class="btn btn-success" onclick="send()" value="Отправить">
+                    </div>
                 </form>
             </div>
-            <div class="mb-3 col-md-6 col-sm-12 ectionContact text-center">   
+
+            <div class="mb-3 col-md-6 col-sm-12 shadow-lg p-4 bg-white rounded text-center d-flex align-items-center">   
                 <p class="zakaz-text">
                     Каждое изделие – это история вкуса, рассказываемая в каждом удивительном кусочке. 
-                    Позвольте себе насладиться утонченностью и изыском в каждом укусе. <br/>                  
+                    Позвольте себе насладиться утонченностью и изыском в каждом укусе. 
+                    <br/> <br/>                 
                     Мы верим, что настоящее наслаждение не должно быть дорогим. 
                     Поэтому мы делаем удовольствие от наших кондитерских изделий доступным для каждого.
                 </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 centered" >
-                <img width="100%" src="../images/tort.jpg">
             </div>
         </div>
 
@@ -107,19 +102,26 @@
                 Nina's cakes
                 </a>
             </div>
-            <div class="col-md-4 d-flex align-items-center justify-content-center">
-               Данный веб-сайт был выполнен в рамках Региональной олимпиады: 
-               IT-технологии и не обязательно должен быть согласован с директором или представителем организации.
-                &nbsp;<span>&copy; <span id="year"></span></span>
+
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center text-center">
+                <h6 class="mb-0">
+                    Данный веб-сайт был выполнен в рамках<br /> 
+                    Региональной олимпиады: IT-технологии.
+                </h6>
+                <div class="mt-2"> &copy; <span id="year"></span>
+                </div>
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a href="https://www.facebook.com/profile.php?id=100064158877873"><svg class="bi" width="24" height="24">
-                    <use xlink:href="#facebook" /> </svg></a>
+                <li class="ms-3"><a href="https://www.facebook.com/profile.php?id=100064158877873">
+                    <svg class="bi" width="24" height="24">
+                     <use xlink:href="#facebook" /> 
+                    </svg></a>
                 </li>
             </ul>
         </footer>
     </div>
+    
     <script src="../js/email.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
