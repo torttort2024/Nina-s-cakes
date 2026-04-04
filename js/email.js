@@ -14,7 +14,7 @@ function send() {
         zakaz: document.getElementById("zakaz").value
     };
 
-    emailjs.send("service_ml72cpr", "template_6avwvsk", date)
+   emailjs.send("service_ml72cpr", "template_6avwvsk", date)
         .then(function (raspuns) {
             alert("Заказ отправлен")
             document.getElementById("forma").reset();
